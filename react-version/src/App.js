@@ -6,7 +6,12 @@ import TweetList from './components/TweetList';
 
 function App() {
   return (
-    <div className="App"></div>
+    <div className="App">
+      <Navigation />
+      <Profile />
+      <TweetForm />
+      <TweetList />
+    </div>
   );
 }
 
