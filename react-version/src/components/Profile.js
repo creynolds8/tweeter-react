@@ -1,6 +1,16 @@
-function Profile () {
+function Profile() {
   return (
-    <h1>I am a profile component</h1>
+    <aside>
+      <div class="profile">
+        <img class="profile__image" src="./profile-hex.png" />
+      </div>
+      <br />
+      <div class="profile__name">
+        <h2>
+          <span class="profile--bold">Amy</span> Mansell
+        </h2>
+      </div>
+    </aside>
   );
 }
 
