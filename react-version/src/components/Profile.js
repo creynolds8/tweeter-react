@@ -2,7 +2,7 @@ function Profile() {
   return (
     <aside>
       <div className="profile">
-        <img className="profile__image" src="./profile-hex.png" />
+        <img className="profile__image" src="profile-hex.png" alt=""/>
       </div>
       <br />
       <div className="profile__name">
