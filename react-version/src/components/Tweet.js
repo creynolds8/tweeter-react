@@ -32,3 +32,5 @@ function Tweet () {
   </article>
   )
 }
+
+export default Tweet;
