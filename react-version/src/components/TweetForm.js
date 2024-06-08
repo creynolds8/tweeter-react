@@ -4,16 +4,20 @@ function TweetForm () {
     event.preventDefault();
     console.log('input: event prevented');
   }
+  const handldeFormSubmit = (event) => {
+    event.preventDefault();
+    console.log('form: event prevented');
+  }
 
   return (
     <section className="newtweet">
-      <form method="post" action="/tweets" className="newtweet__form">
+      <form onSubmit= {handldeFormSubmit} method="post" action="/tweets" className="newtweet__form">
         <textarea
           className="form__textarea"
           name="text"
           placeholder={formText}
         ></textarea>
-        <input onClick={handleClick} type="submit" value="Tweet" className="form__input" />
+        <input /*onClick={handleClick}*/ type="submit" value="Tweet" className="form__input" />
         <span className="form__counter">140</span>
       </form>
     </section>
